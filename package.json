@@ -1,0 +1,39 @@
+{
+  "name": "b-rest",
+  "version": "0.0.1",
+  "description": "Express configuration of web framework for serving RESTFUL",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tndinhbao/b-rest.git"
+  },
+  "keywords": [
+    "b-"
+  ],
+  "author": "Bao Tran",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "morgan": "^1.9.0",
+    "spdy": "^3.4.7",
+    "supertest": "^3.0.0",
+    "swagger-express-middleware": "^1.0.0-alpha.12",
+    "swagger-ui-express": "^2.0.10",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^4.0.1"
+  }
+}
