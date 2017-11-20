@@ -1,6 +1,6 @@
 {
-  "name": "b-rest",
-  "version": "0.0.1",
+  "name": "vnng-rest",
+  "version": "0.0.2",
   "description": "Express configuration of web framework for serving RESTFUL",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tndinhbao/b-rest.git"
+    "url": "https://github.com/tndinhbao/vnng-rest.git"
   },
   "keywords": [
-    "b-"
+    "rest", "vnng"
   ],
   "author": "Bao Tran",
   "license": "MIT",
