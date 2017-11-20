@@ -4,11 +4,11 @@ Express configuration of web framework for serving RESTFUL
 # Installation
 
 ```
-npm install b-rest --save
+npm install vnng-rest --save
 ```
 or
 ```
-yarn add b-rest
+yarn add vnng-rest
 ```
 
 *Requires Node v8.9.0 or above*
@@ -18,7 +18,7 @@ yarn add b-rest
 `index.js`
 
 ```js
-const rest = require('b-rest');
+const rest = require('vnng-rest');
 
 const app = rest();
 
