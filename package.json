@@ -1,17 +1,20 @@
 {
   "name": "vnng-rest",
-  "version": "0.0.2",
-  "description": "Express configuration of web framework for serving RESTFUL",
+  "version": "0.0.3",
+  "description": "Add common middleware to express app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec *.spec.js"
+    "test": "mocha -R spec *.spec.js",
+    "format": "prettier *.js",
+    "eslint": "eslint *.js --fix"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/tndinhbao/vnng-rest.git"
   },
   "keywords": [
-    "rest", "vnng"
+    "rest",
+    "vnng"
   ],
   "author": "Bao Tran",
   "license": "MIT",
@@ -26,14 +29,17 @@
     "express": "^4.16.2",
     "helmet": "^3.9.0",
     "morgan": "^1.9.0",
-    "spdy": "^3.4.7",
-    "supertest": "^3.0.0",
     "swagger-express-middleware": "^1.0.0-alpha.12",
     "swagger-ui-express": "^2.0.10",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "assert": "^1.4.1",
-    "mocha": "^4.0.1"
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "prettier": "^1.8.2",
+    "supertest": "^3.0.0"
   }
 }

@@ -5,14 +5,24 @@
   },
   "rules": {
     "semi": 2,
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
     "no-console": 0,
     "no-underscore-dangle": 0,
     "no-unused-expressions": 0,
     "no-plusplus": 0,
-    "comma-dangle": ["error", { "functions": "ignore" }],
+    "comma-dangle": [
+      "error",
+      {
+        "functions": "ignore"
+      }
+    ],
     "func-names": 0,
     "object-curly-newline": 0,
-    "arrow-parens": 0
+    "arrow-parens": 0,
+    "no-multi-assign": 0,
+    "no-use-before-define": 0
   }
 }

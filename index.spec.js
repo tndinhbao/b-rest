@@ -8,6 +8,7 @@ describe('Start REST', () => {
       msg: 'Its work! :D'
     };
 
+    // Controller
     let routers = (container, route) => {
       const { greeting } = container;
       route.get('/api', (req, res) => {
@@ -17,27 +18,31 @@ describe('Start REST', () => {
       return route;
     };
 
+    // Inverse of control
     routers = routers.bind(null, {
       greeting: () => msg
     });
 
-    const serverSettings = {
-      baseUrl: '/test',
-      serverName: 'test server',
-      swagger: {
-        document: './swagger.yaml',
-        path: '/docs'
-      }
-    };
+    const app = rest();
 
-    rest(serverSettings, routers).then(app => {
-      request
-        .agent(app)
-        .get('/test/api')
-        .expect(res => {
-          assert.deepEqual(res.body, msg);
-        })
-        .expect(200, done);
+    // Swagger
+    app.swagger({
+      document: './swagger.yaml',
+      path: '/docs'
     });
+
+    // routers
+    app.use('/test', routers(rest.Router()));
+    
+    // Start
+    app.listen(3000);
+
+    request
+      .agent(app)
+      .get('/test/api')
+      .expect(res => {
+        assert.deepEqual(res.body, msg);
+      })
+      .expect(200, done);
   });
 });
